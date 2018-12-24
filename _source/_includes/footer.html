@@ -1,0 +1,39 @@
+<footer class="footer">
+  <div class="footer-nav">
+    <ul class="footer-nav-here">
+      <li><strong>Here</strong></li>
+      <li><a href="/is/">About</a></li>
+      <li class="footer-nav-here-portfolio"><a href="/makes/">Work</a></li>
+      <li><a href="/writes/">Essays</a></li>
+      <li class="footer-nav-here-loves"><a href="/loves/">Resources</a></li>
+    </ul>
+
+    <ul class="footer-nav-elsewhere">
+      <li><strong>Elsewhere</strong></li>
+      <li><a href="{{ site.twitter }}" title="@migreyes">Twitter</a></li>
+      <li><a href="{{ site.github }}" target="_blank" title="@migreyes">GitHub</a></li>
+      <li><a href="{{ site.dribbble }}" target="_blank" title="@migreyes">Dribbble</a></li>
+      <li><a href="{{ site.instagram }}" target="_blank" title="@migreyes snaps of nice people and nice things.">Instagram</a></li>
+    </ul>
+
+    <ul class="footer-nav-essays">
+      <li><strong>Recent essays</strong></li>
+      {% for essay in site.categories.writes limit:4 %}
+        {% unless essay.title == page.title %}
+          {% if essay.svn %}
+            <li><a href="http://signalvnoise.com/posts/{{ essay.svn }}" target="_blank" title="Written on Signal vs. Noise: {{ essay.title }}">{{ essay.title }}</a></li>
+          {% else %}
+            <li><a href="{{ essay.url }}">{{ essay.title }}</a></li>
+          {% endif %}
+        {% endunless %}
+      {% endfor %}
+    </ul>
+  </div>
+
+  <div class="footer-chicago">
+    <a href="/loves/chicago/" class="chicago-flag" title="My favorite places in Chicago">
+      <p>Made in Chicago</p><br>
+      <span class="flag">✶✶✶✶</span>
+    </a>
+  </div>
+</footer>

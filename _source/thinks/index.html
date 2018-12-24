@@ -1,0 +1,16 @@
+---
+title: Short thoughts from Mig Reyes
+class: thinks
+---
+
+<h1>Beliefs, ethos, and a mental scratch pad.</h1>
+
+<section class="thoughts">
+  <ul>
+  {% for thought in site.data.thoughts %}
+    <li class="thought" data-thought id="{{ thought.anchor }}"><a href="#{{ thought.anchor }}" title="Click for a permanent link for this thought.">{{ thought.text }}</a></li>
+  {% endfor %}
+  </ul>
+
+  <p>You can read my <a href="/writes">longer form essays</a>, or you can <a href="http://twitter.com/migreyes" title="More thoughts like this on Twitter">follow me on Twitter</a>.</p>
+</section>

@@ -1,0 +1,20 @@
+// Missing ——————————————————————————————————— •
+// ——————————————————————————————————————————— •
+
+.error .footer { display: none; }
+
+.missing {
+  margin: 4em auto;
+  max-width: 480px;
+
+  figure {
+    margin-bottom: 2em;
+    max-width: 3em;
+    width: 100%;
+  }
+
+  img {
+    height: auto;
+    width: 100%;
+  }
+}

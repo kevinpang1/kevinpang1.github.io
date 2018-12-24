@@ -1,0 +1,32 @@
+- name: 1password
+  url: https://agilebits.com/onepassword
+  info: is how I safely use one password for everything.
+
+- name: Basecamp
+  url: https://basecamp.com
+  info: is where I keep all my work together.
+
+- name: Fantastical
+  url: http://flexibits.com/fantastical
+  info: is how I stay on top of things.
+
+- name: iA Writer
+  url: http://www.iawriter.com/mac/
+  info: is where I write.
+
+- name: Moom
+  url: http://manytricks.com/moom/
+  info: is how I organize my application windows.
+
+- name: Sublime Text 2
+  url: http://www.sublimetext.com/2
+  info: is where I code.
+
+# Delete Uber
+# - name: Uber
+#   url: https://www.uber.com/invite/uberMig
+#   info: is my favorite way to get around. “UberMig” for $10 off!
+
+# - name: You Need a Budget
+#   url: http://ynab.refr.cc/HWKB56Q
+#   info: is how I save a lot of money.

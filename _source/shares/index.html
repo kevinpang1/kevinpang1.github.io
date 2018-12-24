@@ -1,0 +1,61 @@
+---
+title: A live feed and blog from Mig Reyes
+class: shares
+---
+<section class="shares-content">
+
+  <h1>Blog and live stream</h1>
+
+  <div class="shares-twitter">
+    <a class="twitter-timeline" href="https://twitter.com/migreyes" data-chrome="noborders noheader nofooter transparent" data-link-color="#5EACEE" data-tweet-limit="1" data-widget-id="433091280793387008">Tweets by @migreyes</a>
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+  </div>
+
+  <div class="shares-blog">
+    <h3>Blog</h3>
+
+    <ul>
+      {% for post in site.categories.shares limit:3 %}
+        <li>
+          <a href="{{ post.url }}">
+            <p>{{ post.title }}</p>
+            <em>{{ post.preview }}</em>
+            <time data-post-date="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time>
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+
+    <span class="ephemera slant whats-new">whats new?</span>
+  </div>
+
+  <div class="shares-delicious">
+    <h3>Delicious</h3>
+    <p><a href="https://delicious.com/migreyes" target="_blank">@migreyes</a> on Delicious, good finds.</p>
+    <ul class="shares-delicious-links">
+    </ul>
+  </div>
+
+  <div class="shares-github">
+    <h3>GitHub</h3>
+    <p><a href="https://github.com/migreyes" target="_blank">@migreyes</a> on GitHub, help me code.</p>
+  </div>
+
+  <div class="shares-instagram">
+    <h3>Instagram</h3>
+    <p><a href="http://instagram.com/migreyes">@migreyes</a> on Instagram<span data-instagram-followers></span>.</p>
+  </div>
+
+  <div class="shares-beliefs">
+    <h3>Currently thinking</h3>
+    <p>I jot down <a href="/thinks">quips and short thoughts</a> before writing <a href="/writes">essays</a>.</p>
+
+    <ul>
+      {% for thought in site.data.thoughts limit:3 %}
+        {% assign total = site.data.thoughts | size %}
+        <li class="shares-beliefs-thought"><a href="/thinks/#{{ thought.anchor }}">{{ thought.text }}</a></li>
+      {% endfor %}
+      <li class="shares-beliefs-thought"><a href="/thinks">More…</a></li>
+    </ul>
+  </div>
+</section>

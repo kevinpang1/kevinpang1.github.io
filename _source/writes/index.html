@@ -1,0 +1,56 @@
+---
+title: Short essays on design by Mig Reyes
+class: writes
+---
+
+<section class="writes-introduction">
+  <img class="writes-introduction-brain" src="/assets/images/writes/brain.png">
+  <img class="writes-introduction-notebook" src="/assets/images/writes/notebook.jpg" data-parallax data-parallax-direction="top" data-parallax-start="0" data-parallax-stop="250" data-parallax-rate="-1.5">
+
+  <h1>Brief essays on design, craft, and culture</h1>
+</section>
+
+<section class="writes-essays">
+  <aside class="essay-toggles">
+    <ul class="essay-toggles-radios">
+      <li data-essay-filter="recent" class="essay-toggle selected"><span class="essay-ui-radio">&nbsp;</span> Newest first</li>
+      <li data-essay-filter="shortest" class="essay-toggle"><span class="essay-ui-radio">&nbsp;</span> Shortest first</li>
+    </ul>
+    {% comment %}
+    <ul class="essay-toggles-checkboxes">
+      <li data-essay-filter="favorites" class="essay-toggle"><span class="essay-ui-check">&nbsp;</span> My favorites</li>
+    </ul>
+    {% endcomment %}
+  </aside>
+
+  <ul class="writes-essays-list" data-essays>
+  {% for essay in site.categories.writes %}
+    <li class="writes-essay"{% if essay.favorite %} data-favorite{% endif %} data-words="{{ essay.content | number_of_words }}" data-date="{{ forloop.index }}">
+    {% if essay.medium %}
+      <a href="https://medium.com/@migreyes/{{ essay.medium }}" target="_blank" title="On Medium: {{ essay.title }}">
+    {% elsif essay.svn %}
+      <a href="http://signalvnoise.com/posts/{{ essay.svn }}" target="_blank" title="Written on Signal vs. Noise: {{ essay.title }}">
+    {% else %}
+      <a href="{{ essay.url }}/">
+    {% endif %}
+        <h2>{{ essay.title }}</h2>
+        <p>{{ essay.preview }}</p>
+        <p>
+          <small data-reading-time>&nbsp;</small>
+          {% if essay.medium %}
+            <small class="essay-medium mobile">Medium</small>
+            <small class="essay-medium desktop">Written on Medium</small>
+          {% elsif essay.svn %}
+            <small class="essay-svn mobile">SvN</small>
+            <small class="essay-svn desktop">Written on Signal vs. Noise</small>
+          {% endif %}
+          <small data-essay-date="{{ essay.date | date_to_xmlschema }}">{{ essay.date | date: "%B %Y" }}</small>
+        </p>
+      </a>
+    </li>
+  {% endfor %}
+  </ul>
+
+  <p>I also keep a <a href="/thinks">sketchpad for thoughts</a> and <a href="{{ site.twitter }}" title="Follow me on Twitter">share some on Twitter</a>.</p>
+  <p>For more good reads, visit <a href="http://signalvnoise.com" target="_blank">Signal v. Noise</a> and <a href="http://thedistance.com" target="_blank">The Distance</a>.</p>
+</section>

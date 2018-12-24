@@ -1,0 +1,40 @@
+<!--
+
+Curious about the code? This site was made by hand with love using Jekyll.
+My favorite parts were extracted to a starting template here:
+http://github.com/migreyes/hazelnut
+
+-->
+
+<!DOCTYPE html>
+<html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+  <head>
+    {% if page.layout == "essay" %}
+      <title>{{ page.title }} written by Mig Reyes</title>
+    {% else %}
+      <title>{{ page.title }}</title>
+    {% endif %}
+    <meta name="title" content="Mig Reyes is a designer.">
+    <meta name="description" content="Mig Reyes is a designer from Chicago leading design at Trunk Club and serves as President for AIGA Chicago.">
+    <meta name="author" content="Mig Reyes">
+    <meta name="Copyright" content="Copyright Mig Reyes 1986 - 2017. All Rights Reserved.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="/assets/stylesheets/style.css">
+
+    {% if page.stylesheet %}
+      <link rel="stylesheet" type="text/css" href="/assets/stylesheets/individual/{{ page.stylesheet }}.css">
+    {% endif %}
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="/assets/javascript/scripts.js"></script>
+
+    {% if page.javascript %}
+      <script src="/assets/javascript/individual/{{ page.javascript }}.js"></script>
+    {% endif %}
+
+    <script>(function(e,t,n,r,i,s,o){e["GoogleAnalyticsObject"]=i;e[i]=e[i]||function(){(e[i].q=e[i].q||[]).push(arguments)},e[i].l=1*new Date;s=t.createElement(n),o=t.getElementsByTagName(n)[0];s.async=1;s.src=r;o.parentNode.insertBefore(s,o)})(window,document,"script","//www.google-analytics.com/analytics.js","ga");ga("create","UA-43019362-1","mig.io");ga("send","pageview")</script>
+  </head>

@@ -1,0 +1,34 @@
+ErrorDocument 404 /404.html
+Options -Indexes
+
+# About
+Redirect 301 /info /is
+Redirect 301 /about /is
+Redirect 301 /profile /is
+Redirect 301 /MigReyes-Resume.pdf /is
+
+# Portfolio
+Redirect 301 /work /makes
+Redirect 301 /design /makes
+Redirect 301 /portfolio /makes
+
+# Projects
+Redirect 301 /wanker /makes/wanker
+Redirect 301 /37signals /makes/37signals
+
+# Writing
+Redirect 301 /blog /shares
+Redirect 301 /stream /shares
+Redirect 301 /essays /writes
+Redirect 301 /writing /writes
+Redirect 301 /articles /writes
+Redirect 301 /thoughts /writes
+
+# Resources
+Redirect 301 /chicago /loves/chicago
+Redirect 301 /resources /loves
+Redirect 301 /recommends /loves
+
+# Sell
+Redirect 301 /sells-a-bike /sells/bike
+Redirect 301 /macbook /sells/macbook

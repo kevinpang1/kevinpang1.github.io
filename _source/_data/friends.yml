@@ -1,0 +1,353 @@
+# Design
+#####################################
+
+- name: Aaron Draplin
+  url: draplin.com
+  location: Portland
+  industry: design
+
+- name: Andy Schwelger
+  url: letterform.net
+  location: Chicago
+  industry: design
+
+- name: Alison Yard Medland
+  url: alisonyard.com
+  location: Chicago
+  industry: design
+
+- name: Bud Rodecker
+  url: 3st.com
+  location: Chicago
+  industry: design
+
+- name: Carli Dottore
+  url: carlidottore.squarespace.com
+  location: Chicago
+  industry: design
+
+- name: Jason Esser
+  url: jasonesser.com
+  location: Chicago
+  industry: design
+
+- name: Jen Serafini
+  url: serafinicreative.com
+  location: Chicago
+  industry: design
+
+- name: Joseph Delhommer
+  url: alwaysplotting.com
+  location: Manhattan
+  industry: design
+
+- name: Joy Burke
+  url: heyjoyhey.com
+  location: Chicago
+  industry: design
+
+- name: Katherine Walker
+  url: kkwalker.com
+  location: San Francisco
+  industry: design
+
+- name: Knoed
+  url: knoed.com
+  location: Chicago
+  industry: design
+
+- name: Kyle Fletcher
+  url: usklf.com
+  location: Chicago
+  industry: design
+
+- name: Kyle Stewart
+  url: therealkylestewart.com
+  location: Chicago
+  industry: design
+
+- name: Mike McQuade
+  url: mikemcquade.com
+  location: Philadelphia
+  industry: design
+
+- name: Mylo Reyes
+  url: myloreyes.com
+  location: Chicago
+  industry: design
+
+- name: Luke Williams
+  url: lukelukeluke.com
+  location: Brooklyn
+  industry: design
+
+- name: Ryan Paule
+  url: dribbble.com/ryanpaule
+  location: Chicago
+  industry: design
+
+- name: Sean Donohue
+  url: about.me/seandonohue
+  location: Chicago
+  industry: design
+
+- name: UnderConsideration
+  url: underconsideration.com
+  location: Austin
+  industry: design
+
+
+# Product & Web
+#####################################
+
+- name: Basecamp
+  url: basecamp.com
+  location: Chicago
+  industry: web
+
+- name: Adan Altamira
+  url: adanaltamira.com
+  location: Chicago
+  industry: web
+
+- name: Coudal
+  url: coudal.com
+  location: Chicago
+  industry: web
+
+- name: Glenn Cochon
+  url: glenncochon.com
+  location: New York
+  industry: web
+
+- name: Jake Nickell
+  url: jakenickell.com
+  location: Chicago
+  industry: web
+
+- name: Jason Fried
+  url: twitter.com/jasonfried
+  location: Chicago
+  industry: web
+
+- name: Jason James
+  url: jasonjam.es
+  location: San Francisco
+  industry: web
+
+- name: John Schlemmer
+  url: johnschlemmer.com
+  location: San Francisco
+  industry: web
+
+- name: Kunal Bhat
+  url: kunalbhat.com
+  location: Chicago
+  industry: web
+
+- name: Matt Born
+  url: mattborn.com
+  location: Chicago
+  industry: web
+
+- name: Oak Studios
+  url: oak.is
+  location: Brooklyn
+  industry: web
+
+- name: Pedro Carmo
+  url: drocarmo.com
+  location: San Francisco
+  industry: web
+
+- name: Randy Hunt
+  url: randyjhunt.com
+  location: Brooklyn
+  industry: web
+
+- name: Ricky Salsberry
+  url: rickysalsberry.com
+  location: Chicago
+  industry: web
+
+- name: Tina Roth Eisenberg
+  url: swiss-miss.com
+  location: Brooklyn
+  industry: web
+
+- name: Victoria Pater
+  url: twitter.com/typeis4lovers
+  location: Chicago
+  industry: web
+
+- name: Zack Kitzmiller
+  url: z19r.com
+  location: Brooklyn
+  industry: web
+
+# Art & Illustration
+#####################################
+
+- name: Andy Luce
+  url: andyluce.com
+  location: Chicago
+  industry: illustration
+
+- name: Chuck Anderson
+  url: nopattern.com
+  location: Chicago
+  industry: illustration
+
+- name: Erik Marinovich
+  url: erikmarinovich.com
+  location: San Francisco
+  industry: illustration
+
+- name: Friends of Type
+  url: friendsoftype.com
+  location: USA
+  industry: illustration
+
+- name: Heather Day
+  url: heatherdayart.com
+  location: San Francisco
+  industry: illustration
+
+- name: Jessica Hische
+  url: jessicahische.is
+  location: San Francisco
+  industry: illustration
+
+- name: Joe Van Wetering
+  url: joevw.com
+  location: San Diego
+  industry: illustration
+
+- name: Kate Bingaman-Burt
+  url: katebingamanburt.com
+  location: Portland
+  industry: illustration
+
+- name: MAKE
+  url: readysetmake.com
+  location: Chicago
+  industry: illustration
+
+- name: Mikey Burton
+  url: mikeyburton.com
+  location: Cleveland
+  industry: illustration
+
+- name: Ross Zietz
+  url: flickr.com/photos/arzie13/
+  location: Atlanta
+  industry: illustration
+
+- name: Sonnenzimmer
+  url: sonnenzimmer.com
+  location: Chicago
+  industry: illustration
+
+- name: Tad Carpenter
+  url: tadcarpenter.com
+  location: Missouri
+  industry: illustration
+
+- name: Timothy Goodman
+  url: tgoodman.com
+  location: Brooklyn
+  industry: illustration
+
+- name: Tuesday Bassen
+  url: tuesdaybassen.com
+  location: Brooklyn
+  industry: illustration
+
+- name: Will Bryant
+  url: willbryantplz.com
+  location: Portland
+  industry: illustration
+
+# Video & Photography
+#####################################
+
+- name: Carolina Mariana
+  url: carolinamariana.com
+  location: Chicago
+  industry: photo
+
+- name: Craig Shimala
+  url: craigshimala.com
+  location: Chicago
+  industry: photo
+
+- name: Kyle Lamere
+  url: kylelamerephoto.com
+  location: Chicago
+  industry: photo
+
+- name: Lucy Hewett
+  url: lucyhewett.com
+  location: Chicago
+  industry: photo
+
+- name: Nick Campbell
+  url: greyscalegorilla.com
+  location: Michigan
+  industry: photo
+
+- name: Paul Octavious
+  url: pauloctavious.com
+  location: Chicago
+  industry: photo
+
+- name: Rebecca Peplinski
+  url: rebeccapeplinski.com
+  location: Chicago
+  industry: photo
+
+- name: Sean Dorgan
+  url: seandorgan.com
+  location: Australia
+  industry: photo
+
+
+# Interiors
+#####################################
+- name: Jessica Williams
+  url: jessicalynnwilliams.com
+  location: Brooklyn
+  industry: interiors
+
+- name: Megan Born
+  url: meganborn.com
+  location: Chicago
+  industry: interiors
+
+
+# Writing
+#####################################
+- name: Alissa Walker
+  url: gelatobaby.com
+  location: LA
+  industry: writing
+
+- name: Colleen Arturi
+  url: kahlean.com
+  location: Chicago
+  industry: writing
+
+- name: Betsy Mikel
+  url: betsymikel.com
+  location: Chicago
+  industry: writing
+
+- name: Frank Chimero
+  url: frankchimero.com
+  location: Brooklyn
+  industry: writing
+
+- name: Liz Danzico
+  url: bobulate.com
+  location: Brooklyn
+  industry: writing

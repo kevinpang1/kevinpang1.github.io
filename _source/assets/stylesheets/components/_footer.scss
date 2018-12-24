@@ -1,0 +1,101 @@
+// Footer ———————————————————————————————————— •
+// ——————————————————————————————————————————— •
+
+.footer {
+  @include border-box;
+  font-family: $font-sans;
+
+  ul { margin-bottom: 2em; }
+}
+
+.footer-nav-here a:visited,
+.footer-nav-elsewhere a:visited { color: $color-link; }
+
+.footer-chicago {
+  margin-bottom: 4em;
+  text-align: center;
+}
+
+
+// Footer: Tablet ———————————————————————————— •
+// ——————————————————————————————————————————— •
+
+@include responsive-break-point(640px) {
+  .footer {
+    font-size: .9rem;
+
+    ul {
+      display: inline-block;
+      vertical-align: top;
+    }
+  }
+
+  .footer-nav-here {
+    margin-right: 2%;
+    width: 14.667%;
+  }
+
+  .footer-nav-elsewhere {
+    margin-right: 2%;
+    width: 31.333%;
+  }
+
+  .footer-nav-essays { width: 31.333%; }
+
+  .footer-chicago {
+    margin: 8em 0 0 33.333%;
+    padding-bottom: 4em;
+    text-align: left;
+  }
+}
+
+
+// Footer: Desktop ——————————————————————————— •
+// ——————————————————————————————————————————— •
+
+@include responsive-break-point(768px) {
+  .footer-nav-here { margin-left: 16.667%; }
+}
+
+
+// Chicago ——————————————————————————————————— •
+// ——————————————————————————————————————————— •
+
+.chicago-flag {
+
+  &:hover {
+    text-decoration: none;
+
+    p {
+      border-bottom: 1px solid #B3DDF2;
+      color: #FF0000;
+    }
+  }
+
+  p {
+    border-bottom: 1px solid $color-background;
+    color: #999;
+    display: inline-block;
+    font-family: $font-sans;
+    font-size: .65rem;
+    font-weight: bold;
+    letter-spacing: .2rem;
+    line-height: 1.25em;
+    margin-bottom: .5rem;
+    text-transform: uppercase;
+  }
+
+  .flag {
+    background: white;
+    border-bottom: .55em solid #B3DDF2;
+    border-top: .55em solid #B3DDF2;
+    color: #FF0000;
+    display: inline-block;
+    font-size: .6rem;
+    letter-spacing: 2px;
+    line-height: 1.5em;
+    margin: 0 auto;
+    padding: .3em .7em;
+    text-align: center;
+  }
+}

@@ -1,0 +1,120 @@
+---
+title: Mig loves these things
+class: loves
+---
+
+<header class="loves-introduction">
+  <img class="loves-introduction-shop" src="/assets/images/loves/shop.jpg">
+  <img class="loves-introduction-laptop" src="/assets/images/loves/laptop.png" data-parallax data-parallax-direction="top" data-parallax-start="0" data-parallax-stop="250" data-parallax-rate="-1.5">
+
+  <h1>A few favorite things… and people, and places</h1>
+</header>
+
+<section class="loves-chicago-guide">
+  <h3>Chicago City Guide</h3>
+  <p>Home to some of the most amazing artists and designers I know, and great food to boot. If you’re ever here for a visit, for a conference, or just rolling through the Midwest, be sure to <a href="/loves/chicago" title="A collection of all of Mig’s favorite Chicago places">check out my favorite bars, cafes, restaurants, and shops in Chicago</a>.</p>
+  <span class="ephemera clockwise chicago">Don’t call it Chi-city</span>
+</section>
+
+<section class="loves-books">
+  <h3>Books worth reading</h3>
+  <p>From books that have shaped me as a designer since my college days, to recent discoveries suggested by friends and co-workers, this is my recommended reading list.</p>
+
+  <ul>
+  {% for book in site.data.books %}
+    <li>
+      <a href="{{ book.url }}">
+        <img src="/assets/images/books/{{ book.name }}.jpg">
+
+        <div>
+          <h6>{{ book.name }}</h6>
+          <em>{{ book.author }}</em>
+        </div>
+      </a>
+    </li>
+  {% endfor %}
+  </ul>
+</section>
+
+<section class="loves-friends">
+  <h3>Friends</h3>
+  <p>These are some of the incredibly talented people that have inluenced my work, thoughts, and career. I’m proud to call them colleagues, drinking partners, and friends.</p>
+
+  <span class="ephemera counter-clockwise company">You’re known by the company you keep</span>
+
+  <ul class="loves-friends-design">
+    <li>Design</li>
+    {% assign design = site.data.friends | where: "industry", "design" | sort: "name" %}
+    {% for friend in design %}
+      <li><a href="http://{{ friend.url }}" target="_blank">{{ friend.name }}</a></li>
+    {% endfor %}
+  </ul>
+
+  <ul class="loves-friends-photo">
+    <li>Photo &amp; Video</li>
+    {% assign photo = site.data.friends | where: "industry", "photo" | sort: "name" %}
+    {% for friend in photo %}
+      <li><a href="http://{{ friend.url }}" target="_blank">{{ friend.name }}</a></li>
+    {% endfor %}
+  </ul>
+
+  <ul class="loves-friends-illustration">
+    <li>Art, Type &amp; Illustration</li>
+    {% assign illustration = site.data.friends | where: "industry", "illustration" | sort: "name" %}
+    {% for friend in illustration %}
+      <li><a href="http://{{ friend.url }}" target="_blank">{{ friend.name }}</a></li>
+    {% endfor %}
+  </ul>
+
+  <ul class="loves-friends-web">
+    <li>Web &amp; Product</li>
+    {% assign web = site.data.friends | where: "industry", "web" | sort: "name" %}
+    {% for friend in web %}
+      <li><a href="http://{{ friend.url }}" target="_blank">{{ friend.name }}</a></li>
+    {% endfor %}
+  </ul>
+
+  <ul class="loves-friends-interiors">
+    <li>Interior Design</li>
+    {% assign interiors = site.data.friends | where: "industry", "interiors" | sort: "name" %}
+    {% for friend in interiors %}
+      <li><a href="http://{{ friend.url }}" target="_blank">{{ friend.name }}</a></li>
+    {% endfor %}
+  </ul>
+
+  <ul class="loves-friends-writing">
+    <li>Writing</li>
+    {% assign writing = site.data.friends | where: "industry", "writing" | sort: "name" %}
+    {% for friend in writing %}
+      <li><a href="http://{{ friend.url }}" target="_blank">{{ friend.name }}</a></li>
+    {% endfor %}
+  </ul>
+</section>
+
+<section class="loves-links loves-web">
+  <h3>Good web reads</h3>
+  <p>I send people to these places whenever they have questions about learning design, programming, or being generally awesome.</p>
+
+  <ul>
+  {% for link in site.data.links %}
+    <li>
+      <a href="{{ link.url }}" title="{{ link.info }}">{{ link.title }}</a>
+      <span>{{ link.info }}</span>
+    </li>
+  {% endfor %}
+  </ul>
+</section>
+
+<section class="loves-links loves-apps">
+  <h3>Software I Can’t Live Without</h3>
+
+  <span class="ephemera clockwise share">Share everything</span>
+
+  <ul>
+  {% for app in site.data.apps %}
+    <li>
+      <a href="{{ app.url }}" target="_blank">{{ app.name }}</a> {{ app.info }}
+    </li>
+  {% endfor %}
+  </ul>
+</section>

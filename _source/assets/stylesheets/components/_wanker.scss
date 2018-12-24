@@ -1,0 +1,67 @@
+// Wanker ———————————————————————————————————— •
+// ——————————————————————————————————————————— •
+
+.wanker {
+  @include border-box;
+  @include clearfix;
+  background: rgba(0,0,0,1);
+  display: none;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2014;
+}
+
+.wanker-content {
+  position: relative;
+
+  a {
+    color: $color-link;
+  }
+
+  p {
+    font-family: $font-sans;
+    color: #EEE;
+    font-size: 2em;
+    line-height: 1em;
+    margin: 2em auto;
+    text-align: center;
+    width: 90%;
+  }
+
+  img { position: absolute; }
+}
+
+.wanker-finger {
+  left: 32%;
+  z-index: 99/* problems but a bitch ain’t one. */;
+}
+
+.wanker-hole {
+  position: relative;
+  right: 35%;
+}
+
+.wanker-pinch {
+  right: 0;
+  z-index: 69;
+}
+
+.wanker-spread {
+  right: 0;
+  z-index: 666;
+}
+
+.wanker-poop {
+  @include animate(fade-in-up .2s both);
+  display: block;
+  left: 35%;
+  top: 15em;
+  z-index: 573;
+}
+
+@include responsive-break-point(401px) {
+  .wanker-poop { display: none; }
+}

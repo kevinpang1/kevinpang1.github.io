@@ -1,0 +1,120 @@
+---
+title: About Mig Reyes, Design Lead at Trunk Club
+class: about
+---
+
+<section class="about-portrait presentation" data-presentation="portrait" data-escapable>
+  <figure class="presentation-content about-portrait-photo">
+    <img src="/assets/images/is/mig.jpg">
+    <figcaption>Photo by <a href="http://instagram.com/miekd" target="_blank">Maykel Loomans</a> at Brooklyn Beta 2013.</figcaption>
+  </figure>
+</section>
+
+<section class="about-biography">
+  <article class="about-biography-long">
+    <h1>I&rsquo;m a designer exploring the intersection of brand, marketing, and product design working as Design Lead for <a href="http://trunkclub.com" target="_blank">Trunk Club</a>. I also proudly serve as the President of <a href="http://chicago.aiga.org" target="_blank">AIGA Chicago</a>.</h1>
+
+    <p>Before joining Trunk Club, I spent the last four years working as both a product and communications designer at Basecamp. There, I designed and led brand and marketing projects for the popular <a href="http://basecamp.com" target="_blank">project management app</a>, shipped new features, improved conversion and retention of our customers, shaped the Basecamp voice through marketing experiments and writing, all the way to new product prototyping. I learned to try new ideas often, and approached the spirit of our <a href="http://37svn.com/3646" target="_blank">work like scientists would</a>. Every day I helped make sure our customers felt super loved.</p>
+    <p>Before Basecamp, I cut my teeth as the first full-time interactive designer at Threadless. There, I designed much of the marketing campaigns, brand standards, and Threadless.com interfaces. It was there where I learned how to take care of your community and try new ideas, no matter how weird. I also accidentally moonlit as a t-shirt model, but thankfully for everyone else that career was short-lived. Leading up to Threadless, I toughened my skin working at studios and agencies making work for clients including AIGA, Google, Harley-Davidson, Rand McNally, Sears, Segura Inc, SC Johnson, and Valspar.</p>
+    <p>Teaching, mentoring, and community outreach make up the latter half of my time. I’m working hard every day to make the Chicago design community a better place by serving as President for <a href="http://chicago.aiga.org" target="_blank">AIGA Chicago</a>. I also maintain a design video blog, <a href="http://humblepied.com" target="_blank">Humble Pied</a>, which showcases short videos from inspirational designers sharing quick bits of advice. I also started and organized the <a href="http://creativemornings.com/cities/chi" target="_blank">CreativeMornings Chicago</a> chapter for two years, ultimately passing the reigns to my friends Kim and Kyle at <a href="http://www.knoed.com" target="_blank">Knoed</a>. Beyond all that I serve as a mentor within design, tech, and startup organizations. (Phew.)</p>
+    <p>I like my pizza hot, my coffee black, and my beer hoppy.</p>
+
+    <p class="link" data-toggle-bio=".about-biography-short">Too long, didn’t read?</p>
+  </article>
+
+  <article class="about-biography-short">
+    <h1>
+      Design Lead, Trunk Club.<br>
+      President, AIGA Chicago.
+    </h1>
+    <p>
+      I lead design at <a href="http://trunkclub.com" target="_blank">Trunk Club</a>, where we&rsquo;re working hard to redesign retail and what it means for people to find confidence through personal style. Formerly Basecamp, Threadless, and a smattering of studios and agencies. Beliefs: try new things, humility over hubris, build your community, and have some fucking fun with your work.<br>
+      <a href="/loves/chicago">Chicago proud. ✶✶✶✶</a>
+    </p>
+
+    <p class="link" data-toggle-bio=".about-biography-long">More?</p>
+  </article>
+
+  <div class="about-biography-photos">
+    <img src="/assets/images/is/mig-blue.png">
+
+    <figure class="about-biography-photos-slider" data-toggle-presentation="portrait" data-parallax data-parallax-direction="top" data-parallax-start="-40" data-parallax-stop="250" data-parallax-rate="-1.5">
+      <img src="/assets/images/is/mig-black.png">
+      <figcaption>Photo by <a href="http://instagram.com/miekd" target="_blank">Maykel Loomans</a></figcaption>
+    </figure>
+  </div>
+
+  <span class="ephemera clockwise midwest">Roll your sleeves up,<br>Midwest pride</span>
+</section>
+
+<section class="about-teaching">
+  <h3>Teaching</h3>
+  <p>Since 2012, I’ve been teaching beginners the fundamentals of design and visual patterns at The Starter League in Chicago. Prior, I spent three years teaching art direction, design, and professional practices at The Chicago Portfolio School.</p>
+
+  <span class="ephemera counter-clockwise give">Give more than you take</span>
+</section>
+
+<section class="about-public">
+  <article class="about-public-speaking">
+    <h3>Speaking</h3>
+    <ul>
+      {% for talk in site.data.talks %}
+        <li>
+          <h5>{{ talk.title }}</h5>
+          <p>{{ talk.location }}</p>
+          {% if talk.video %}<span><a href="{{ talk.video }}" target="_blank">View video</a></span>{% endif %}
+          {% if talk.photos %}<span><a href="{{ talk.photos }}" target="_blank">View photos</a></span>{% endif %}
+          {% if talk.recap %}<span><a href="{{ talk.recap }}" target="_blank">View recap</a></span>{% endif %}
+        </li>
+      {% endfor %}
+    </ul>
+  </article>
+
+  <article class="about-public-interviews">
+    <h3>Interviews</h3>
+    <ul>
+      {% for interview in site.data.interviews %}
+        <li><a href="{{ interview.url }}" target="_blank">{{ interview.title }}</a></li>
+      {% endfor %}
+    </ul>
+  </article>
+
+  <article class="about-public-press">
+    <h3>Press</h3>
+    <ul>
+      {% for press in site.data.press %}
+        <li>{{ press.title }}</li>
+      {% endfor %}
+    </ul>
+  </article>
+
+  <article class="about-public-print">
+    <h3>Publications</h3>
+    <ul>
+      {% for publication in site.data.publications %}
+        <li>
+          <h4><a href="{{ publication.url }}" target="_blank">{{ publication.title }}</a></h4>
+          {{ publication.publisher }}
+        </li>
+      {% endfor %}
+    </ul>
+  </article>
+
+  <span class="ephemera slant nice">Be human, be nice</span>
+</section>
+
+<section class="about-availability">
+  <h3>Contact</h3>
+
+  <p>I’m easily reachable on <a href="{{ site.instagram }}">Instagram</a> and <a href="{{ site.twitter }}">Twitter</a> at <a href="{{ site.instagram }}">@migreyes</a>. For interviews and speaking, you can email me at <script src="/assets/javascript/plugins/email.js"></script> 🙌</p>
+
+  <span class="ephemera clockwise hello">Hello</span>
+</section>
+
+<section class="about-colophon">
+  <h3>Colophon</h3>
+
+  <p>This site is designed with a six-column grid from <a href="http://Basecamp.com/svn/posts/1061-why-we-skip-photoshop" target="_blank">sketch to code</a>. Programmed with <a href="http://www.sublimetext.com/2" target="_blank">Sublime Text 2</a> using <a href="http://jekyllrb.com" target="_blank">Jekyll</a>, Sass, jQuery paired with <a href="http://coffeescript.org" target="_blank">CoffeeScript</a>, and <a href="http://rake.rubyforge.org" target="_blank">Rake</a> tasks for compilation and deployment to Dreamhost. Version controlled with Git on <a href="http://github.com/migreyes">GitHub</a>. The body typeface is GT Sectra, while the complimentary sans-serif is <a href="http://www.fontshop.com/fonts/family/alto/" target="_blank">Alto</a> by OurType. Photoshop and Illustrator fired up for imagery. Probably swore a lot when I broke something in the code. Get weird.</p>
+
+  <span class="ephemera est">Est. 1986</span>
+</section>

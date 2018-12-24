@@ -1,0 +1,54 @@
+.ephemera {
+  @include backface-visibility;
+  @include opacity(.75);
+  color: $color-link;
+  display: none;
+  font-family: $font-sans;
+  font-size: .75em;
+  font-weight: bold;
+  letter-spacing: 2px;
+  line-height: 1.25em;
+  position: absolute;
+  text-transform: uppercase;
+  z-index: 1986;
+
+  &.clockwise {
+    -webkit-transform: rotate(-90deg);
+       -moz-transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+  }
+
+  &.counter-clockwise {
+    -webkit-transform: rotate(90deg);
+       -moz-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+
+  &.slant {
+    -webkit-transform: rotate(45deg);
+       -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+
+  &.counter-slant {
+    -webkit-transform: rotate(-45deg);
+       -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+  }
+
+  &.large {
+    font-size: 10em;
+    font-weight: normal;
+  }
+}
+
+// Ephemera: Tablet —————————————————————————— •
+// ——————————————————————————————————————————— •
+
+@include responsive-break-point(768px) {
+  .ephemera { display: block; }
+}

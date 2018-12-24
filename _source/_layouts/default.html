@@ -1,0 +1,13 @@
+{% include head.html %}
+  <body{% if page.class %} class="{{ page.class }}"{% endif %}>
+    {% include navigation.html %}
+
+    <div class="content">
+      {{ content }}
+
+      {% include footer.html %}
+    </div>
+
+    {% include wanker.html %}
+  </body>
+</html>

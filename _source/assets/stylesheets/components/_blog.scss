@@ -1,0 +1,129 @@
+// Blog —————————————————————————————————————— •
+// ——————————————————————————————————————————— •
+
+.blog h1,
+.blog-preview,
+.blog-stream {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 460px;
+}
+
+.blog h1 { margin-top: 3em; }
+
+.blog-preview {
+  color: #666;
+  font-weight: normal;
+  font-style: italic;
+  line-height: 1.25em;
+}
+
+.blog-content {
+  @include animate(fade-in-up .5s both);
+  @include border-box;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 460px;
+
+  img {
+    height: auto;
+    max-width: 100%;
+  }
+
+  li {
+    padding-left: 1em;
+    margin-bottom: 1em;
+    position: relative;
+
+    &:before {
+      content: "•";
+      color: #333;
+      position: absolute;
+      left: 0;
+    }
+  }
+}
+
+.blog-date {
+  color: #999;
+  font-style: italic;
+  margin-top: 2em;
+}
+
+// Blog: Tablet —————————————————————————————— •
+// ——————————————————————————————————————————— •
+
+@include responsive-break-point(640px) {
+  .blog h1 {
+    margin: 1em 0 0 16.667%;
+    max-width: 66.667%;
+  }
+
+  .blog-preview {
+    font-size: 1.5em;
+    margin: 0 0 0 16.667%;
+    max-width: 66.667%;
+    width: 66.667%;
+  }
+
+  .blog-date {
+    margin-left: 16.667%;
+    margin-top: .25em;
+  }
+
+  .blog-content {
+    margin-bottom: 10em;
+    margin-left: 16.667%;
+    margin-top: 3em;
+    padding: 0;
+    max-width: 680px;
+
+    h1 {
+      font-size: 4.5em;
+      line-height: .95em;
+      margin-bottom: .5em;
+    }
+
+    p, li {
+      font-size: 1.1em;
+      line-height: 1.75em;
+    }
+  }
+
+  .blog-stream {
+    margin-left: 16.667%;
+    margin-bottom: 8em;
+
+    a:visited { color: $color-link; }
+  }
+}
+
+
+// Essays: Desktop ——————————————————————————— •
+// ——————————————————————————————————————————— •
+
+@include responsive-break-point(1000px) {
+  .blog h1 {
+    margin-bottom: 2em;
+    margin-top: 2em;
+    margin-left: 33.333%;
+  }
+
+  .blog-preview {
+    margin-bottom: 0;
+    margin-left: 16.667%;
+    width: 50%;
+  }
+
+  .blog-date {
+    margin-bottom: 8em;
+    margin-left: 16.667%;
+  }
+
+  .blog-content,
+  .blog-stream {
+    margin-left: 33.333%;
+    max-width: 680px;
+    width: 66.667%;
+  }
+}

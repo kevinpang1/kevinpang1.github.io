@@ -1,0 +1,97 @@
+
+// Home & About ———————————————————————— ✶
+// ————————————————————————————————————— ✶
+
+.about-overview {
+
+}
+
+
+@include min-width($break-desktop) {
+  .about {
+
+    header {
+      margin-bottom: 5em;
+      padding-top: 5em;
+      width: 80%;
+
+      a:link {
+        color: $color-charcoal;
+      }
+
+      a:hover {
+        color: $color-orange;
+      }
+    }
+  }
+
+  .about-overview {
+    margin: 0 0 5em 20%;
+    width: 80%;
+
+    li {
+      font-size: 1.2em;
+    }
+  }
+
+  .about-history {
+    margin: 0 0 5em 0;
+    width: 80%;
+  }
+
+  .about-community {
+    margin: 0 0 10em 0;
+  }
+
+  .about-organizations,
+  .about-teaching {
+    display: inline-block;
+    margin-right: -4px;
+    padding-right: 2em;
+    vertical-align: top;
+    width: 40%;
+  }
+
+  .about-speaking {
+    margin: 0 0 5em 20%;
+    width: 60%;
+  }
+
+  .about-recognition {
+    margin: 0 0 10em 0;
+  }
+
+  .about-press {
+    margin: 0 0 5em 20%;
+  }
+
+  .about-interviews,
+  .about-publications {
+    display: inline-block;
+    margin-right: -4px;
+    padding-right: 1em;
+    vertical-align: top;
+    width: 40%;
+  }
+
+  .about-interviews {
+    margin-left: 20%;
+  }
+
+  .about-testimonials {
+    margin: 0 0 10em 20%;
+    width: 80%;
+  }
+
+  .about-contact {
+    margin: 0 0 10em 20%;
+    width: 60%;
+  }
+
+  .about-colophon {
+    color: #999;
+    line-height: 1em;
+    margin: 0 0 0 20%;
+    width: 80%;
+  }
+}
